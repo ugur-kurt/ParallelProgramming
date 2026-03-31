@@ -28,11 +28,3 @@ def fn_w_counter() -> tuple[int, dict[str, int]]:
     temp_dict[(str)(__name__)] = fn_w_counter.count
     temp_tuple = (fn_w_counter.count, temp_dict)
     return temp_tuple 
-
-if __name__ == "__main__":
-    print(custom_power(2,3))
-    print(custom_power(2,e=3))    
-    print(custom_equation(2, 2, a=3, b=3,c=1))
-    for i in range(5):
-        fn_w_counter()
-    print(fn_w_counter())
